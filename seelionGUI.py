@@ -70,7 +70,7 @@ vid = cv2.VideoCapture(0)
 
 def open_camera():
     _, frame = vid.read()
-    results = model(frame)  # Use the YOLO model to perform detection on the frame
+    results = model(frame, conf=0.3)  # Use the YOLO model to perform detection on the frame
     annotated_frame = results[0].plot() # Get the annotated frame
     opencv_image = cv2.cvtColor(annotated_frame, cv2.COLOR_BGR2RGBA)
     captured_image = Image.fromarray(opencv_image)
@@ -82,7 +82,7 @@ def open_camera():
 def save_results():
     ret, frame = vid.read()
     if ret:
-        results = model(frame)  # Use the YOLO model to perform detection on the frame
+        results = model(frame, conf=0.3)  # Use the YOLO model to perform detection on the frame
         annotated_frame = results[0].plot()  # Get the annotated frame
 
         # Get the current time
