@@ -1,0 +1,15 @@
+names:
+- 'Orange_colored_life-ring'
+- 'Mannequin_wearing_orange-colored_life_preserver_unit_(LPU)'
+- 'Multi-person_life_raft'
+- 'Orion_capsule_mockup_(WEST)_located_on_far_end_of_pool'
+nc: 4
+roboflow:
+  license: CC BY 4.0
+  project: rescue-equipment
+  url: https://universe.roboflow.com/2024-csi-microg-next/rescue-equipment/dataset/1
+  version: 1
+  workspace: 2024-csi-microg-next
+test: /content/SEE-LION-1/test/images
+train: /content/SEE-LION-1/train/images
+val: /content/SEE-LION-1/valid/images
