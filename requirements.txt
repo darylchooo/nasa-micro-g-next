@@ -1,0 +1,6 @@
+ultralytics==8.0.196
+opencv-python==4.10.0.84
+opencv-contrib-python==4.10.0.82
+torch==2.3.1
+pillow==10.3.0
+customtkinter==5.2.2
