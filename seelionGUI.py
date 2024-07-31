@@ -8,7 +8,7 @@ import torch
 from ultralytics import YOLO
 
 # Load the YOLO model with the specified weights
-model = YOLO('C:/Users/Gigabyte/Downloads/nasa-micro-g-next/best.pt')
+model = YOLO('best.pt')
 
 # Set appearance mode and color theme
 ctk.set_appearance_mode("dark")
